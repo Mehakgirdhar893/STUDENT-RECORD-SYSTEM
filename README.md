@@ -12,8 +12,8 @@ A **console-based application in C** for managing student records. Users can **a
 * Cross-platform support (Windows & ANSI-compatible consoles)
 
 ## Building
-Linux/macOS: gcc main.c -o main
-Windows (MinGW/MSYS): gcc main.c -o main.exe
+-Linux/macOS: gcc main.c -o main
+-Windows (MinGW/MSYS): gcc main.c -o main.exe
 
 ## Storage
 
