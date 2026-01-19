@@ -1,4 +1,4 @@
-Student Record Management System
+## Student Record Management System
 
 A **console-based application in C** for managing student records. Users can **add, view, search, and delete** student information (Name, Roll, Marks) with persistent storage in a binary file. The interface is enhanced with **color-coded output** for readability.
 
