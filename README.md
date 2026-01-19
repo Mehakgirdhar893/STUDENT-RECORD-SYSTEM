@@ -11,6 +11,10 @@ A **console-based application in C** for managing student records. Users can **a
 * Color-coded console output (ANSI escape sequences)
 * Cross-platform support (Windows & ANSI-compatible consoles)
 
+## Building
+Linux/macOS: gcc main.c -o main
+Windows (MinGW/MSYS): gcc main.c -o main.exe
+
 ## Storage
 
 Records are stored in a binary file:
