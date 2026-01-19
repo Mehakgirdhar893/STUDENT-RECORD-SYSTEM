@@ -34,7 +34,7 @@ static void strip_newline(char *s) {
 
 void addRecord(void) {
     struct record student;
-    FILE *ptr = fopen("Neelakshi.txt", "ab");
+    FILE *ptr = fopen("mehak.txt", "ab");
     if (!ptr) {
         printf(RED "\nError: could not open file for appending\n" RESET);
         return;
@@ -83,7 +83,7 @@ void addRecord(void) {
 
 void showRecord(void) {
     struct record student;
-    FILE *ptr = fopen("Neelakshi.txt", "rb");
+    FILE *ptr = fopen("mehak.txt", "rb");
     if (!ptr) {
         printf(YELLOW "\nNo records found (file not present)\n" RESET);
         return;
@@ -101,7 +101,7 @@ void showRecord(void) {
 void searchRecord(void) {
     int r;
     struct record student;
-    FILE *ptr = fopen("Neelakshi.txt", "rb");
+    FILE *ptr = fopen("mehak.txt", "rb");
     if (!ptr) {
         printf(YELLOW "\nNo records found (file not present)\n" RESET);
         return;
@@ -134,7 +134,7 @@ void searchRecord(void) {
 
 void deleteRecord(void) {
     struct record student;
-    FILE *ptr = fopen("Neelakshi.txt", "rb");
+    FILE *ptr = fopen("mehak.txt", "rb");
     FILE *temp = fopen("temp.dat", "wb");
     if (!ptr || !temp) {
         printf(RED "\nError opening file(s)\n" RESET);
@@ -167,9 +167,9 @@ void deleteRecord(void) {
     fclose(ptr);
     fclose(temp);
 
-    if (remove("Neelakshi.txt") != 0) {
+    if (remove("mehak.txt") != 0) {
         printf(RED "\nError removing original file\n" RESET);
-    } else if (rename("temp.dat", "Neelakshi.txt") != 0) {
+    } else if (rename("temp.dat", "mehak.txt") != 0) {
         printf(RED "\nError renaming temporary file\n" RESET);
     }
 
