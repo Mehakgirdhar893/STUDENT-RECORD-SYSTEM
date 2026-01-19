@@ -18,5 +18,5 @@ Records are stored in a binary file:
 * `mehak.txt`
 
 
-License
+## License
 This project is licensed under the MIT License — see the LICENSE file for details.
